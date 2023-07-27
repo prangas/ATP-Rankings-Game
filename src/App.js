@@ -64,13 +64,13 @@ function App() {
           <nav className='nav'>
           <Link to = "/help"><img src = {question} style = {{height:"auto", width: "30px"}}/></Link>
             <Link to = "/home">ATP Rankings Game</Link>
-            <Link to = "/login" className='loginNav'>{login}</Link>
+            <Link to = "/my-app/login" className='loginNav'>{login}</Link>
           </nav>
           <hr className='hr'/>
           <Routes>
             <Route path = "/home" element = {<Home user = {login}/>}></Route>
             <Route path = "/create-account/" element = {<CreateAccount />}></Route>
-            <Route path = "/login" element = {<Login sendBack = {loggedIn} sendUp = {getScore} />}></Route>
+            <Route path = "/my-app/login" element = {<Login sendBack = {loggedIn} sendUp = {getScore} />}></Route>
             <Route path = "/results" element = {<Results score = {thisScore}/>}></Route>
             <Route path = "/leaderboard" element = {<Leaderboard/>}></Route>
             <Route path = "/help" element = {<Help />}></Route>
