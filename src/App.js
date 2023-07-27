@@ -67,14 +67,14 @@ function App() {
             <Link to = "/login" className='loginNav'>{login}</Link>
           </nav>
           <hr className='hr'/>
-          <Routes>
+          <HashRouter>
             <Route path = "/home" element = {<Home user = {login}/>}></Route>
             <Route path = "/create-account/" element = {<CreateAccount />}></Route>
             <Route path = "/login" element = {<Login sendBack = {loggedIn} sendUp = {getScore} />}></Route>
             <Route path = "/results" element = {<Results score = {thisScore}/>}></Route>
             <Route path = "/leaderboard" element = {<Leaderboard/>}></Route>
             <Route path = "/help" element = {<Help />}></Route>
-          </Routes>
+          </HashRouter>
           
           </div>
    
