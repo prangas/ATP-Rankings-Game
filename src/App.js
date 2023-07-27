@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from "react";
-import {Routes, Route, Link, useNavigate} from 'react-router-dom';
+import {HashRouter, Route, Link, useNavigate} from 'react-router-dom';
 import logo from "./768px-Tennis_ball_3.svg.png";
 import question from "./question.png"
 import Home from "./Home";
@@ -44,14 +44,14 @@ function App() {
             <Link to = "/user" className='loginNav'>{login}</Link>
           </nav>
           <hr className='hr'/>
-          <Routes>
+          <HashRouter>
             <Route path = "/home" element = {<Home score = {score} user = {login} sendScore = {updateScore} thisGame = {tS}/>}></Route>
             <Route path = "/create-account" element = {<CreateAccount />}></Route>
             <Route path = "/user" element = {<LoggedIn user = {login} score = {score} />}></Route>
             <Route path = "/results" element = {<Results score = {thisScore}/>}></Route>
             <Route path = "/leaderboard" element = {<Leaderboard/>}></Route>
             <Route path = "/help" element = {<Help />}></Route>
-          </Routes>
+          </HashRouter>
           
           </div>
    

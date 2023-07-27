@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import {Routes, Route, Link, useNavigate} from 'react-router-dom';
+import {HashRouter, Route, Link, useNavigate} from 'react-router-dom';
 import Login from "./Login";
  
 function CreateAccount () {
@@ -221,9 +221,9 @@ function CreateAccount () {
           <div className="goToCreate">
             <Link to =  "/login" >{goToLoginText}</Link>
           </div>
-          <Routes>
+          <HashRouter>
             <Route path = "../login" element = {<Login />}></Route>
-          </Routes>
+          </HashRouter>
         </fieldset>
       </form>
 
