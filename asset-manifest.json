@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d087acde.css",
-    "main.js": "/static/js/main.b2858a83.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
-    "static/media/768px-Tennis_ball_3.svg.png": "/static/media/768px-Tennis_ball_3.svg.d63e6361905abffffe25.png",
-    "static/media/arrow.png": "/static/media/arrow.14bb4945cef99e3eb6d2.png",
-    "static/media/help1.PNG": "/static/media/help1.242acb94d5db16fba1ec.PNG",
-    "index.html": "/index.html",
-    "main.d087acde.css.map": "/static/css/main.d087acde.css.map",
-    "main.b2858a83.js.map": "/static/js/main.b2858a83.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/my-app/static/css/main.ce1b18c5.css",
+    "main.js": "/my-app/static/js/main.6109ce94.js",
+    "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/my-app/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/768px-Tennis_ball_3.svg.png": "/my-app/static/media/768px-Tennis_ball_3.svg.d63e6361905abffffe25.png",
+    "static/media/arrow.png": "/my-app/static/media/arrow.14bb4945cef99e3eb6d2.png",
+    "static/media/help1.PNG": "/my-app/static/media/help1.242acb94d5db16fba1ec.PNG",
+    "index.html": "/my-app/index.html",
+    "main.ce1b18c5.css.map": "/my-app/static/css/main.ce1b18c5.css.map",
+    "main.6109ce94.js.map": "/my-app/static/js/main.6109ce94.js.map",
+    "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d087acde.css",
-    "static/js/main.b2858a83.js"
+    "static/css/main.ce1b18c5.css",
+    "static/js/main.6109ce94.js"
   ]
 }
