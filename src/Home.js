@@ -20,7 +20,7 @@ function Home (props) {
   let ogScore = 0;
 
   if (props.user === "Login") {
-    nav("/login")
+    nav("/my-app/login")
     used = [];
   }
 

@@ -41,7 +41,7 @@ function Login ({sendBack, sendUp, coming}) {
         setLoggedIn(true);
         sendBack(userName);
         sendUp(score);
-        navigate("/home");
+        navigate("/my-app/home");
       }
     }
   }

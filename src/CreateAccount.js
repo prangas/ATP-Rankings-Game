@@ -54,7 +54,7 @@ function CreateAccount () {
         setError("");
         setError2("");
         postUser();
-        nav("/login", {state: {coming: 1}});
+        nav("/my-app/login", {state: {coming: 1}});
         setGoToLoginText("Account Created! Log in here");
       // }
     }

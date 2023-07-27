@@ -4,7 +4,7 @@ function Results(props) {
   const navigate = useNavigate();
   const openLeaderboard = () => {
     // e.preventDefault();
-    navigate("/leaderboard");
+    navigate("/my-app/leaderboard");
   }
 
   return (
