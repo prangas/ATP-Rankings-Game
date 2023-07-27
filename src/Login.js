@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Route, Link, useNavigate, useLocation, HashRouter} from 'react-router-dom';
+import {Route, Link, useNavigate, useLocation, Routes} from 'react-router-dom';
 
 function Login ({sendBack, sendUp, coming}) {
   const [userName, setUserName] = useState("");
@@ -164,9 +164,9 @@ function Login ({sendBack, sendUp, coming}) {
           <div className="goToCreate">
             <Link to =  "/create-account" >Don't have an account? Sign up</Link>
           </div>
-          <HashRouter>
+          <Routes>
             <Route path = "../create-account" element = {<Login />}></Route>
-          </HashRouter>
+          </Routes>
         </fieldset>
       </form>
 
