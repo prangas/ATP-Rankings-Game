@@ -219,10 +219,10 @@ function CreateAccount () {
             <button className="loginButton" >Create Account</button>
           </div>
           <div className="goToCreate">
-            <Link to =  "/login" >{goToLoginText}</Link>
+            <Link to =  "/my-app/login" >{goToLoginText}</Link>
           </div>
           <Routes>
-            <Route path = "../login" element = {<Login />}></Route>
+            <Route path = "../my-app/login" element = {<Login />}></Route>
           </Routes>
         </fieldset>
       </form>
