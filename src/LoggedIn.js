@@ -6,7 +6,7 @@ function LoggedIn(props) {
 
   const handleLog = (e) => {
     e.preventDefault();
-    nav("/my-app/create-account");
+    nav("/create-account");
   }
   const text = "User: " + props.user;
   const [score, setScore] = useState("");

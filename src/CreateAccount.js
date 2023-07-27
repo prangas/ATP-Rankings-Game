@@ -54,7 +54,7 @@ function CreateAccount () {
         setError("");
         setError2("");
         postUser();
-        nav("/my-app/login", {state: {coming: 1}});
+        nav("/login", {state: {coming: 1}});
         setGoToLoginText("Account Created! Log in here");
       // }
     }
@@ -219,10 +219,10 @@ function CreateAccount () {
             <button className="loginButton" >Create Account</button>
           </div>
           <div className="goToCreate">
-            <Link to =  "/my-app/login" >{goToLoginText}</Link>
+            <Link to =  "/login" >{goToLoginText}</Link>
           </div>
           <Routes>
-            <Route path = "../my-app/login" element = {<Login />}></Route>
+            <Route path = "../login" element = {<Login />}></Route>
           </Routes>
         </fieldset>
       </form>

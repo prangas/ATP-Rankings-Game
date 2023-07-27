@@ -41,7 +41,7 @@ function Login ({sendBack, sendUp, coming}) {
         setLoggedIn(true);
         sendBack(userName);
         sendUp(score);
-        navigate("/my-app/home");
+        navigate("/home");
       }
     }
   }
@@ -162,10 +162,10 @@ function Login ({sendBack, sendUp, coming}) {
             <button className="loginButton" >Login</button>
           </div>
           <div className="goToCreate">
-            <Link to =  "/my-app/create-account" >Don't have an account? Sign up</Link>
+            <Link to =  "/create-account" >Don't have an account? Sign up</Link>
           </div>
           <Routes>
-            <Route path = "../my-app/create-account" element = {<Login />}></Route>
+            <Route path = "../create-account" element = {<Login />}></Route>
           </Routes>
         </fieldset>
       </form>
