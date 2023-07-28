@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import arrow from "./arrow.png";
 
 
@@ -17,13 +17,14 @@ function Home (props) {
   const [user, setUser] = useState("");
   const correctValue = playerRanking;
   const nav = useNavigate();
+  const loc = useLocation();
   let ogScore = 0;
 
   if (props.user === "Login") {
     nav("/login")
     used = [];
   }
-  if (props.again === "yes") {
+  if (loc.state.again === "yes") {
     used = [];
   }
 
