@@ -24,9 +24,7 @@ function Home (props) {
     nav("/login")
     used = [];
   }
-  if (loc.state.again === "yes") {
-    used = [];
-  }
+
 
 
   
