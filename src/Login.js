@@ -14,7 +14,7 @@ function Login ({sendBack, sendUp, coming}) {
   let x = 0;
   let y = 0;
   let z = 0;
-  const navigate = useNavigate();
+  const nav = useNavigate();
   const loc = useLocation();
 
 

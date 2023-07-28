@@ -2,7 +2,7 @@ import help1 from "./help1.PNG";
 import help2 from "./help2.png";
 import { useNavigate } from "react-router-dom";
 
-function Help() {
+function Help({reset}) {
   const nav = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
