@@ -236,6 +236,9 @@ hr.hr {
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #b6b6b6;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .popup {

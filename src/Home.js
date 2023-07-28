@@ -19,14 +19,11 @@ function Home (props) {
   const nav = useNavigate();
   const loc = useLocation();
   let ogScore = 0;
-
   if (props.user === "Login") {
-    nav("/login")
+    nav("/login");
     used = [];
   }
-  if (props.reset === "yes") {
-    used = [];
-  }
+
 
 
 

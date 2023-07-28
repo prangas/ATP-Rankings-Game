@@ -1,13 +1,14 @@
+import { useEffect } from "react";
 import help1 from "./help1.PNG";
 import help2 from "./help2.png";
 import { useNavigate } from "react-router-dom";
 
-function Help({reset}) {
+function Help() {
   const nav = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    reset("yes");
-    nav("/home", {state: {reset: "yes"}});
+    nav("/home")
+
   }
 
   return (
