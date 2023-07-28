@@ -6,7 +6,7 @@ function Help() {
   const nav = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    nav("/home");
+    nav("/home", {state:{again: true}});
   }
 
   return (
