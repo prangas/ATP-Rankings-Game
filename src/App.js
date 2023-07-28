@@ -17,6 +17,7 @@ function App() {
   const [login, setLogin] = useState("Login");
   const [score, setScore] = useState(0);
   const [thisScore, setThisScore] = useState(0);
+  const [reset, setReset] = useState("no");
 
   const loggedIn = (user) => {
     setLogin(user);
@@ -34,6 +35,10 @@ function App() {
     setThisScore(val);
   }
 
+  const getReset = (yN) => {
+    setReset(yN)
+  }
+
   if (login != "Login") {
     return (
       <div className = "nav">
@@ -45,12 +50,12 @@ function App() {
           </nav>
           <hr className='hr'/>
           <Routes>
-            <Route path = "/home" element = {<Home score = {score} user = {login} sendScore = {updateScore} thisGame = {tS}/>}></Route>
+            <Route path = "/home" element = {<Home score = {score} user = {login} sendScore = {updateScore} thisGame = {tS} reset = {reset}/>}></Route>
             <Route path = "/create-account" element = {<CreateAccount />}></Route>
             <Route path = "/user" element = {<LoggedIn user = {login} score = {score} />}></Route>
             <Route path = "/results" element = {<Results score = {thisScore}/>}></Route>
             <Route path = "/leaderboard" element = {<Leaderboard/>}></Route>
-            <Route path = "/help" element = {<Help />}></Route>
+            <Route path = "/help" element = {<Help reset = {getReset}/>}></Route>
           </Routes>
           
           </div>
@@ -73,7 +78,7 @@ function App() {
             <Route path = "/login" element = {<Login sendBack = {loggedIn} sendUp = {getScore} />}></Route>
             <Route path = "/results" element = {<Results score = {thisScore}/>}></Route>
             <Route path = "/leaderboard" element = {<Leaderboard/>}></Route>
-            <Route path = "/help" element = {<Help />}></Route>
+            <Route path = "/help" element = {<Help reset = {getReset}/>}></Route>
           </Routes>
           
           </div>

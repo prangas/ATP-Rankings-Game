@@ -24,6 +24,9 @@ function Home (props) {
     nav("/login")
     used = [];
   }
+  if (props.reset === "yes") {
+    used = [];
+  }
 
 
 
